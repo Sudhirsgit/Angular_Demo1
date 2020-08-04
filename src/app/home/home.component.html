@@ -1,0 +1,12 @@
+﻿<div class="p-4">
+    <div class="container">
+        <h1>Hi {{user.firstName}}!</h1>
+        <p>You're logged in with Angular 10!!</p>
+        <div *ngIf ="user.role === 'Admin'">
+            <p ><a routerLink="/users" >Manage Employees</a></p>
+        </div>
+        <div *ngIf ="user.role ==='User'">
+            <p><a routerLink="/users" >Show Employees</a></p>
+        </div>
+    </div>
+</div>
